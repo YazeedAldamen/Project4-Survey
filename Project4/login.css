@@ -1,0 +1,48 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+:root {
+    --mainColor: #B62828;
+}
+
+
+
+#Button1 {
+    border: 2px solid var(--mainColor);
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: var(--mainColor);
+    transition: 0.4s;
+    margin-top:15px;
+}
+
+#Button1:hover {
+    color: #fff;
+    background-color: var(--mainColor);
+}
+
+
+.ting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    height:90vh;
+}
+nav {
+    width: 100%;
+    padding-inline: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

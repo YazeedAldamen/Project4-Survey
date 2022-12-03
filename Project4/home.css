@@ -1,0 +1,136 @@
+﻿* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 25px;
+    line-height:40px;
+
+}
+
+:root {
+    --mainColor: #B62828;
+}
+
+#form{
+    align-content:center;
+    justify-content:center;
+}
+
+img {
+    width: 100%;
+    height: 100%
+}
+
+nav {
+    width: 100%;
+    padding-inline: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+.log {
+    border: 2px solid var(--mainColor);
+    padding: 8px 20px;
+    border-radius:5px;
+    color: var(--mainColor);
+    transition: 0.4s;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+.log:hover{
+    color:#fff;
+    background-color:var(--mainColor);
+}
+
+.logo{
+    color: var(--mainColor);
+}
+
+body {
+}
+
+.both {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    padding-inline: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
+    width:45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction:column;
+    gap: 20px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h1 span {
+    color: var(--mainColor);
+    font-size: 60px;
+}
+
+.img {
+    width: 45%;
+    height:100%;
+}
+
+
+
+
+
+.btn {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 900;
+    font-size: 17px;
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 15px;
+        background-color: var(--mainColor);
+        z-index: -1;
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        transition: all 250ms
+    }
+
+    .btn:hover {
+        color: #e8e8e8;
+    }
+
+        .btn:hover::before {
+            width: 100%;
+        }
+
+
+
+
