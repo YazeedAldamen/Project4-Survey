@@ -77,6 +77,7 @@
     <Content Include="questions.aspx" />
     <Content Include="survey.aspx" />
     <Content Include="TextFile1.txt" />
+    <Content Include="questionfile.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
