@@ -41,4 +41,19 @@ namespace Project_4
                 return false;
         }
     }
+    public class Question {
+        string questionss;
+
+        public Question(string question)
+        {
+            this.questionss = question;
+        }
+            public Question()
+        {
+
+        }
+        public string Questionss { get => questionss; set => questionss = value; }
+
+        
+    }
 }
