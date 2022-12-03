@@ -74,6 +74,7 @@
     <Content Include="login.aspx" />
     <Content Include="login.css" />
     <Content Include="login.html" />
+    <Content Include="questions.aspx" />
     <Content Include="survey.aspx" />
     <Content Include="TextFile1.txt" />
     <Content Include="Web.config" />
@@ -98,6 +99,13 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="questions.aspx.cs">
+      <DependentUpon>questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questions.aspx.designer.cs">
+      <DependentUpon>questions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="survey.aspx.cs">
       <DependentUpon>survey.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
