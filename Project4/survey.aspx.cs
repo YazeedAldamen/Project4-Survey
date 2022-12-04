@@ -11,6 +11,8 @@ namespace Project_4
 {
     public partial class survey : System.Web.UI.Page
     {
+        string[] questions;
+
         Employee emp;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,17 +23,17 @@ namespace Project_4
             addQuestions();
         }
 
+
         private void addQuestions() {
 
+
+
             string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\questionfile.txt";
-            string[] questions = File.ReadAllLines(path);
+             questions = File.ReadAllLines(path);
 
-            
 
-            //div for every question
-            PlaceHolder[] ph = new PlaceHolder[10];
-            
-            
+
+
 
             //radio buttons to hold choises 
             RadioButtonList[] rbl = new RadioButtonList[10];
@@ -50,23 +52,25 @@ namespace Project_4
                 excellent[i] = new ListItem();
                 excellent[i].Text = "Excellent";
             }
-            
+
 
             //label to hold the questions
             Label[] labels = new Label[questions.Length];
-            PlaceHolder[] phs = new PlaceHolder[questions.Length];
+
+            //div for every question
+            //PlaceHolder[] phs = new PlaceHolder[questions.Length];
             
             HtmlGenericControl[] divs = new HtmlGenericControl[10];
             for (int i = 0; i < labels.Length; i++) {
 
-                phs[i] = new PlaceHolder();
+                //phs[i] = new PlaceHolder();
 
                 labels[i] = new Label();
                 labels[i].Text = questions[i];
                 labels[i].Attributes.Add("class", "questionTitle");
 
                 rbl[i] = new RadioButtonList();
-                rbl[i].ID = $"{i}";
+                rbl[i].ID = i.ToString();
                 rbl[i].Items.Add(poor[i]);
                 rbl[i].Items.Add(good[i]);
                 rbl[i].Items.Add(vgood[i]);
@@ -74,8 +78,7 @@ namespace Project_4
 
 
 
-                phs[i].Controls.Add(rbl[i]);
-                phs[i].Controls.Add(rbl[i]);
+                //phs[i].Controls.Add(rbl[i]);
                 divs[i] = new HtmlGenericControl();
                 divs[i].Attributes.Add("class", "div");
                 divs[i].Controls.Add(labels[i]);
@@ -110,11 +113,12 @@ namespace Project_4
 
 
 
-
-            string all = null; 
-             foreach (string answer in answers)
+            string all = null;
+            int i = 0;
+            foreach (string answer in answers)
             {
-                all += answer + ","; 
+                all += questions[i] + " " + answer + "\n";
+                i++;
             }
 
             File.WriteAllText(path , all);

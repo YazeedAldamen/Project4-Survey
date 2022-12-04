@@ -13,7 +13,6 @@ namespace Project_4
 
 
 
-        Question[] questionss = new Question[10];
         protected void Page_Load(object sender, EventArgs e)
         {
            
@@ -39,6 +38,10 @@ namespace Project_4
             questions[8] = TextBox9.Text;
             questions[9] = TextBox10.Text;
 
+
+            
+          
+
             StreamWriter sw = new StreamWriter(path);
             foreach (string question in questions) { 
                 sw.WriteLine(question);
@@ -48,7 +51,16 @@ namespace Project_4
             sw.Flush();
             sw.Close();
 
-
+            TextBox1.Text = string.Empty;
+            TextBox2.Text = string.Empty;
+            TextBox3.Text = string.Empty;
+            TextBox4.Text = string.Empty;
+            TextBox5.Text = string.Empty;
+            TextBox6.Text = string.Empty;
+            TextBox7.Text = string.Empty;
+            TextBox8.Text = string.Empty;
+            TextBox9.Text = string.Empty;
+            TextBox10.Text = string.Empty;
 
 
         }

@@ -19,7 +19,7 @@
                 
                    
                 <div class="form-floating">
-                    <asp:TextBox ID="TextBox1" runat="server" placeholder="Question1" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" placeholder="Question1"  class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
                     <label for="question1" class="form-label">Question1</label> <br/>
                 </div>
                 <div class="form-floating">
