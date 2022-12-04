@@ -11,12 +11,13 @@ namespace Project_4
 {
     public partial class survey : System.Web.UI.Page
     {
-        Employee ee;
+        Employee emp;
         protected void Page_Load(object sender, EventArgs e)
         {
-           ee = (Employee)Session["emp"];
-
-            Response.Write(ee.Name);
+           emp = (Employee)Session["emp"];
+            
+                        //File.AppendText("C:\\Users\\Dell\\Project4-Survey\\Project4\\gg.txt");
+            
             addQuestions();
         }
 
@@ -89,10 +90,36 @@ namespace Project_4
         protected void btnSubmmit_Click(object sender, EventArgs e)
         {
 
+            string[] answers = new string[10];
             for (int i = 0; i < 10; i++) {
                 RadioButtonList l = (RadioButtonList)questionsContainer.FindControl($"{i}");
-                Response.Write(l.Text);
+                answers[i] = l.Text;
             }
+
+            saveEmpAns(answers);
+
+
+
+        }
+
+         //saving employee answers in a file 
+        private  void saveEmpAns(string[] answers) {
+
+
+            string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\" + emp.Name+ ".txt";
+
+
+
+
+            string all = null; 
+             foreach (string answer in answers)
+            {
+                all += answer + ","; 
+            }
+
+            File.WriteAllText(path , all);
+
+
         }
     }
 }
