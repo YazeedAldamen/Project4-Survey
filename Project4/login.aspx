@@ -20,19 +20,21 @@
     <div class="container" >
         <div class="row">
             <div class="col-6 ting" id="form" >
-                <form id="form1" runat="server">
-                     <h1>Log In</h1>
-                  <div class="form-floating">
-                        <input type="email" name="email" placeholder="Email" id="email" class="form-control"  runat="server"/>
-                        <label class="form-label" for="email">Email</label>
-                    </div>
-                    <br />
-                    <div class="form-floating">
-                        <input type="password" name="password" placeholder="Password" id="password" class="form-control"  runat="server" />
-                        <label class="form-label" for="password">Password</label>
-                    </div>
-                    <asp:Button ID="Button1" runat="server" Text="Log In" OnClick="Button1_Click" />
-                </form>
+                
+                        <form id="form1" runat="server">
+                                <h1>Log In</h1>
+                            <div class="form-floating">
+                                <input type="email" name="email" placeholder="Email" id="email" class="form-control" style="width:500px; " runat="server"/>
+                                <label class="form-label" for="email" >Email</label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="password" name="password" placeholder="Password" id="password" class="form-control" style="width:500px; " runat="server" />
+                                <label class="form-label" for="password">Password</label>
+                            </div>
+                            <asp:Button ID="Button1" runat="server" Text="Log In" OnClick="Button1_Click" />
+                        </form>
+                  
             </div>
             <div class="col-6 ting">
                 <img src="img/login.gif" alt="Alternate Text" />

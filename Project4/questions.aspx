@@ -17,23 +17,53 @@
         
             <div class="col-8">
                 
-                    <%
-                        for (int i = 1; i <=10; i++)
-                        {
-                        %>
+                   
                 <div class="form-floating">
-           
-                            <input type="text" name="<%=i%>" placeholder="Email"  class="form-control form-control-success" id="question<%=i%>"  style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"/>
-                            <label for="question<%=i%>" class="form-label">Question<%=i%></label> <br/>
-
-                  
+                    <asp:TextBox ID="TextBox1" runat="server" placeholder="Question1" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <label for="question1" class="form-label">Question1</label> <br/>
                 </div>
-                  <% }%>
+                <div class="form-floating">
+                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Question2" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <label for="question1" class="form-label">Question2</label> <br/>
+                </div>
+                <div class="form-floating">
+                    <asp:TextBox ID="TextBox3" runat="server" placeholder="Question3" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <label for="question1" class="form-label">Question3</label> <br/>
+                </div>
+                <div class="form-floating">
+                    <asp:TextBox ID="TextBox4" runat="server" placeholder="Question4" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <label for="question1" class="form-label">Question4</label> <br/>
+                </div>
+                <div class="form-floating">
+                    <asp:TextBox ID="TextBox5" runat="server" placeholder="Question5" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <label for="question1" class="form-label">Question5</label> <br/>
+                </div>
+                <div class="form-floating">
+                    <asp:TextBox ID="TextBox6" runat="server" placeholder="Question6" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <label for="question1" class="form-label">Question6</label> <br/>
+                </div>
+                <div class="form-floating">
+                    <asp:TextBox ID="TextBox7" runat="server" placeholder="Question7" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <label for="question1" class="form-label">Question7</label> <br/>
+                </div>
+                <div class="form-floating">
+                    <asp:TextBox ID="TextBox8" runat="server" placeholder="Question8" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <label for="question1" class="form-label">Question8</label> <br/>
+                </div>
+                <div class="form-floating">
+                    <asp:TextBox ID="TextBox9" runat="server" placeholder="Question9" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <label for="question1" class="form-label">Question9</label> <br/>
+                </div>
+                <div class="form-floating">
+                    <asp:TextBox ID="TextBox10" runat="server" placeholder="Question10" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <label for="question1" class="form-label">Question10</label> <br/>
+                </div>
             </div>
         <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
        
     </form>
      <div class="col-4">
+                         <img src="img/login.gif" alt="Alternate Text" />
 
       </div>
       </div>

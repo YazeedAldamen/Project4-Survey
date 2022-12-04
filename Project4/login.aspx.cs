@@ -31,7 +31,7 @@ namespace Project_4
                 if (em=="haya@gmail.com"&&pass== "5896")
 
                 {
-                    Response.Redirect("admin.aspx");
+                    Response.Redirect("questions.aspx");
                 }
                else if (employees[i].login( em , pass) ){
 
