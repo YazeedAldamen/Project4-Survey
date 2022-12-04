@@ -34,8 +34,9 @@ namespace Project_4
                     Response.Redirect("questions.aspx");
                 }
                else if (employees[i].login( em , pass) ){
-
+                    Session["emp"] = employees[i];
                     Response.Redirect("survey.aspx");
+                    
                 }
                 
                 

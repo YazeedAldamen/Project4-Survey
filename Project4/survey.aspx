@@ -6,8 +6,27 @@
 <head runat="server">
     <title></title>
     <style>
-        span {
+
+
+        table {
+           margin-top:30px;
+        }
+        .div {
             display:block;
+           
+           margin-top:10px;
+           padding:40px;
+           border-radius:20px;
+           box-shadow:5px 5px 10px gray;
+        }
+
+        div {
+           width:80%;
+           margin:0px auto;
+        }
+        .questionTitle {
+          margin-bottom:40px;
+          
         }
     </style>
 </head>
@@ -16,14 +35,16 @@
         <div>
 
 
-            <asp:PlaceHolder ID="questionsContainer" runat="server">
+            <asp:PlaceHolder ID="questionsContainer"  runat="server" >
 
-                <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-
-                </asp:RadioButtonList>
+               
             </asp:PlaceHolder>
         </div>
+        <asp:Button ID="btnSubmmit" runat="server" Text="Submit" OnClick="btnSubmmit_Click" />
+
         
+
     </form>
+    
 </body>
 </html>
