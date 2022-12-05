@@ -62,6 +62,7 @@ namespace Project_4
             TextBox9.Text = string.Empty;
             TextBox10.Text = string.Empty;
 
+            Response.Redirect("Dashboard.aspx");
 
         }
 

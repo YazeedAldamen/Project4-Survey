@@ -14,30 +14,40 @@
 <body>
     <div class="container-fluid">
         <nav>
-            <div class="logo">Survey</div>
+            <div class="logo">
+    <a href="home.html"><img src="img/logo.png" alt="Alternate Text" style="width:200px"/></a></div>
         </nav>
     </div>
-    <div class="container" >
+    <br />
+    <br />
+    <div class="container"  >
         <div class="row">
-            <div class="col-6 ting" id="form" >
+            <div class="col-lg-6 col-12 ting" id="form" style= "box-shadow:  2px 2px 4px #B62828, 1px 2px 4px #B62828 ; height: calc(30.1rem + 30px);  margin:20px 0px ; border-radius:15px ;" >
                 
                         <form id="form1" runat="server">
-                                <h1>Log In</h1>
-                            <div class="form-floating">
-                                <input type="email" name="email" placeholder="Email" id="email" class="form-control" style="width:500px; " runat="server"/>
+                            <div style="margin:28px 0px;" >
+                                <h1 style="margin-bottom:12px; font-family:'Comic Sans MS'; color : #B62828 ;">Log In</h1>
+                            
+                            </div>
+                            <div class="form-floating from-floating-sm">
+                                <input type="email" name="email" placeholder="Email" id="email" class="form-control " style="width:100%; padding:10px;  height: calc(2.1rem + 30px); " runat="server"/>
                                 <label class="form-label" for="email" >Email</label>
                             </div>
                             <br />
                             <div class="form-floating">
-                                <input type="password" name="password" placeholder="Password" id="password" class="form-control" style="width:500px; " runat="server" />
+                                <input type="password" name="password" placeholder="Password" id="password" class="form-control" style=" height: calc(2.1rem + 30px); " runat="server" />
                                 <label class="form-label" for="password">Password</label>
                             </div>
-                            <asp:Button ID="Button1" runat="server" Text="Log In" OnClick="Button1_Click" />
+                            <asp:Button ID="Button1" runat="server" Text="Log In" OnClick="Button1_Click"  style="width:500px;"/>
+                            <br />
+                            
+                            <br />
+                            <asp:Label Visible="false" Text=" wrong email or password !" runat="server" class="alert alert-danger" role="alert" style="margin:10px 10px;"  ID="myDIV" />
                         </form>
                   
             </div>
-            <div class="col-6 ting">
-                <img src="img/login.gif" alt="Alternate Text" />
+            <div class="col-lg-6 col-12 ting">
+                <img src="img/login.gif" alt="Alternate Text"  id="img"/>
             </div>
         </div>
     </div>

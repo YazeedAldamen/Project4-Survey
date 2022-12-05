@@ -67,7 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin.aspx" />
+    <Content Include="dash.css" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
     <Content Include="home.css" />
     <Content Include="home.html" />
@@ -75,20 +76,24 @@
     <Content Include="login.css" />
     <Content Include="login.html" />
     <Content Include="questions.aspx" />
+    <Content Include="navbar.css" />
     <Content Include="survey.aspx" />
+    <Content Include="surveyTakers.txt" />
     <Content Include="TextFile1.txt" />
     <Content Include="questionfile.txt" />
+    <Content Include="thank.css" />
+    <Content Include="thankyou.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin.aspx.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin.aspx.designer.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

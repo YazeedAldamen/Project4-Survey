@@ -4,9 +4,24 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Survey</title>
+    <link href="navbar.css" rel="stylesheet" />
     <style>
+        * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height:40px;
 
+}
+        :root {
+    --mainColor: #B62828;
+}
+        body {
+         padding:0px;
+         margin:0px;
+        }
 
         table {
            margin-top:30px;
@@ -18,33 +33,128 @@
            padding:40px;
            border-radius:20px;
            box-shadow:5px 5px 10px gray;
+           
         }
-
-        div {
+        img {
+          width:100%; 
+        }
+        .div label {
+           font-weight:800;
+           color:#bb283a;
+        }
+        .question {
            width:80%;
            margin:0px auto;
         }
+        
         .questionTitle {
           margin-bottom:40px;
-          
+          font-size:25px;
+          font-weight:800;
+          text-align:left;
         }
+
+        #btnSubmmit {
+            background-color:white;
+            width:150px;
+            height:60px;
+            margin-top:20px;
+            float:right;
+            margin-bottom:30px;
+            border-radius:10px;
+            border:2px solid #bb283a  ;
+            color:#bb283a;
+            font-weight:800;
+            font-size:20px;
+            transition:.8s;
+            cursor:pointer;
+
+        }
+        #btnSubmmit:hover {
+           transform:scale(104%); 
+           background-color:#bb283a;
+           color:white;
+        }
+
+        .header {
+            width:80%;
+           margin:0px auto;
+          display:flex;
+          justify-content:space-between;
+          align-items:center;
+        }
+
+        .header .text {
+            width:50%; 
+            
+         }
+            .header .text h1 {
+              font-size:41px;
+            }
+            .header .text p {
+              font-size:20px;
+            }
+        .header .image {
+            width:40%;
+          }
+
+        #footer1 {
+            background-color: #B62828;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            bottom: 0px;
+        }
+
+        #rights {
+            color: #FFFFFF;
+            font-size: 15px;
+        }
+        .errorMessage{
+            color:grey;
+            position:relative;
+            top:15px;
+        }
+
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-
-
-            <asp:PlaceHolder ID="questionsContainer"  runat="server" >
-
-               
-            </asp:PlaceHolder>
+    <nav>
+        <div class="logo">
+            <a href="home.html"><img src="img/logo.png" alt="Alternate Text" style="width:200px" /></a>
         </div>
-        <asp:Button ID="btnSubmmit" runat="server" Text="Submit" OnClick="btnSubmmit_Click" />
+        <a href="home.html"><div class="log">Log Out</div></a>
+    </nav>
+    <form id="form1" runat="server">
+        <div class="cont">
 
+            <div class="header">                
+                <div class="text">
+                    <h1>About Survey</h1>
+                    <br />
+                    <p>To the employee survey! This survey contains 1 page, and will take approximately 2 minutes to fill out.
+                The purpose of this survey is to gather information about overall work environment.to the employee survey! This survey contains 1 page, and will take approximately 2 minutes to fill out.
+                The purpose of this survey is to gather information about overall work environment.</p>
+                </div>   
+                <div class="image"><img src="img\good.gif"/></div>
+            </div>
+
+            <div class="question">
+                <asp:PlaceHolder ID="questionsContainer"  runat="server" >
+                
+                </asp:PlaceHolder>
+                <asp:Button ID="btnSubmmit" runat="server" Text="Submit" OnClick="btnSubmmit_Click" />
+            </div>
+            
+
+
+            
         
-
+    </div>
     </form>
-    
+    <footer id="footer1"><p id="rights">Â© 2022 SurveyPerfecto. All Rights Reserved</p></footer>
+
 </body>
 </html>

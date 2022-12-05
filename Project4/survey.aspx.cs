@@ -41,14 +41,15 @@ namespace Project_4
             ListItem[] good = new ListItem[10];
             ListItem[] vgood = new ListItem[10];
             ListItem[] excellent = new ListItem[10];
+            RequiredFieldValidator[] validators= new RequiredFieldValidator[10];
 
             for (int i = 0; i < 10; i++) {
                 poor[i] = new ListItem();
-                poor[i].Text = "poor";
+                poor[i].Text = "Poor";
                 good[i] = new ListItem();
-                good[i].Text = "good";
+                good[i].Text = "Good";
                 vgood[i] = new ListItem();
-                vgood[i].Text = "very good";
+                vgood[i].Text = "Very Good";
                 excellent[i] = new ListItem();
                 excellent[i].Text = "Excellent";
             }
@@ -76,6 +77,10 @@ namespace Project_4
                 rbl[i].Items.Add(vgood[i]);
                 rbl[i].Items.Add(excellent[i]);
 
+                validators[i] = new RequiredFieldValidator();
+                validators[i].ControlToValidate = i.ToString();
+                validators[i].ErrorMessage = "*Required";
+                validators[i].CssClass = "errorMessage";
 
 
                 //phs[i].Controls.Add(rbl[i]);
@@ -83,6 +88,7 @@ namespace Project_4
                 divs[i].Attributes.Add("class", "div");
                 divs[i].Controls.Add(labels[i]);
                 divs[i].Controls.Add(rbl[i]);
+                divs[i].Controls.Add(validators[i]);
                 questionsContainer.Controls.Add(divs[i]);
             }
 
@@ -101,7 +107,7 @@ namespace Project_4
 
             saveEmpAns(answers);
 
-
+            Response.Redirect("thankyou.html");
 
         }
 
@@ -123,7 +129,41 @@ namespace Project_4
 
             File.WriteAllText(path , all);
 
+            surveyTakers();
 
+        }
+
+        private void surveyTakers() {
+            string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\surveyTakers.txt";
+            string info = $"{emp.Id},{emp.Name},{emp.Email},{DateTime.Now}\n";
+
+            File.AppendAllText(path,info);
+            hadSurvey();
+        }
+
+        void hadSurvey()
+        {
+
+
+            emp.HadSurvey = true;
+
+            Employee[] emps = (Employee[])Session["emps"];
+            for (int i = 0; i < emps.Length; i++)
+            {
+                Response.Write(emps[i].HadSurvey);
+            }
+
+
+            //write the employees again to file 
+            string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\TextFile1.txt";
+            string all = null;
+            foreach (Employee emp in emps)
+            {
+                all += $"{emp.Name},{emp.Id},{emp.Email},{emp.HadSurvey}" + "\n";
+
+            }
+
+            File.WriteAllText(path, all);
         }
     }
 }

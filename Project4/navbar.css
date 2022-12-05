@@ -1,0 +1,33 @@
+﻿:root {
+    --mainColor: #B62828;
+}
+nav {
+    width: 100%;
+    padding-inline: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.log {
+    border: 2px solid var(--mainColor);
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: var(--mainColor);
+    transition: 0.4s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.log:hover {
+    color: #fff;
+    background-color: var(--mainColor);
+}
+
+.logo {
+    color: var(--mainColor);
+}

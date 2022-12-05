@@ -14,7 +14,7 @@ namespace Project_4
         protected void Page_Load(object sender, EventArgs e)
         {
             readFile();
-          
+            Session["emps"] = employees;
         }
         
         protected void Button_Click(object sender, EventArgs e)
@@ -24,24 +24,41 @@ namespace Project_4
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            bool f = true;
             string em = email.Value;
-            string pass =  password.Value;
-             for( int i=0; i<employees.Length;i++)
+            string pass = password.Value;
+            for (int i = 0; i < employees.Length; i++)
             {
-                if (em=="haya@gmail.com"&&pass== "5896")
+                if (em == "ahmad@gmail.com" && pass == "2222")
 
                 {
-                    Response.Redirect("questions.aspx");
+                    Response.Redirect("Dashboard.aspx");
                 }
-               else if (employees[i].login( em , pass) ){
-                    Session["emp"] = employees[i];
-                    Response.Redirect("survey.aspx");
-                    
+
+                else if (employees[i].login(em, pass))
+                {
+
+                    if (employees[i].HadSurvey == true)
+                    {
+                        Response.Write("<script>alert('you have already take the survey')</script>");
+                        f = false;
+                    }
+                    else
+                    {
+                        Session["emp"] = employees[i];
+                        Response.Redirect("survey.aspx");
+                    }
+
+
                 }
-                
-                
+
+
             }
-            Response.Write("<script> alert('wrong email or password ') </script>");
+            if (f)
+            {
+                myDIV.Visible= true;
+            }
+
         }
 
         public void readFile()
