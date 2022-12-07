@@ -6,6 +6,7 @@
 <head runat="server">
     <title>Questoins</title>
     <link href="img/logo.png" rel="icon" />
+    <script src="https://kit.fontawesome.com/cd43dd9542.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
     <link href="navbar.css" rel="stylesheet" />
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -137,6 +138,18 @@
         </div>
             </div>
     
-        <footer id="footer1"><p id="rights">Â© 2022 QuestionPro. All Rights Reserved</p></footer>
+        <footer id="footer1">
+
+        <div class="social">
+            <p id="rights">© 2022 Social Hawk. All Rights Reserved</p>
+            <div class="inst" style="display:flex; justify-content:center; gap:10px; margin-top:10px;">
+                <a class="icons" href="https://web.facebook.com/musab.alghannam.37/" target="_blank" style="text-decoration:none; color:white;"> <i class="fa-brands fa-facebook-f"></i></a>
+                <a class="icons" href="https://www.linkedin.com/in/musab-ghannam-0a8284253/" target="_blank" style="text-decoration:none; color:white;"> <i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="icons" href=""> <i class="fa-brands fa-twitter" style="text-decoration:none; color:white;"></i></a>
+                <a class="icons" href="https://www.instagram.com/musab_ghannam/" target="_blank" style="text-decoration:none; color:white;"> <i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+
+    </footer>
 </body>
 </html>
