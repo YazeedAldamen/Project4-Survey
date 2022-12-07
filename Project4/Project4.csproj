@@ -74,7 +74,6 @@
     <Content Include="home.html" />
     <Content Include="login.aspx" />
     <Content Include="login.css" />
-    <Content Include="login.html" />
     <Content Include="questions.aspx" />
     <Content Include="navbar.css" />
     <Content Include="survey.aspx" />

@@ -1,10 +1,10 @@
-dadfas Excellent
-dsafdsazaf Excellent
-dsafdsadfsa Very Good
-dsafdsafdsa Very Good
-sdafdsafsda Very Good
-dsafdsafdsa Poor
-dasfdsafdsaf Poor
-dsafdsafdsa Very Good
-dsafdsafsa Good
-sdafdsafadfsaddsaf Very Good
+On a scale of 1 to 10, how challenged are you on a daily basis at work? Good
+On a scale of 1 to 10, how much our organization supports you in your professional development? Good
+How likely would you leave this organization if another company offered you a 5% raise?  Poor
+On a scale of 1 to 10, how good is your direct supervisor at recognizing your contributions at work? Excellent
+On a scale of 1 to 10, how comfortable do you feel providing upward feedback to your supervisor? Very Good
+On a scale of 1 to 10, how transparent is the management team? Excellent
+ On a scale of 1 to 10, how much fun do you get in your work environment? Very Good
+On a scale of 1 to 10, how connected do you feel with your coworkers? Excellent
+On a scale of 1 to 10, how much respect do your coworkers show with each other? Excellent
+On a scale of 1 to 10, how engaging are our team-building activities? Very Good

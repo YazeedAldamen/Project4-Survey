@@ -11,8 +11,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-size: 20px;
-    line-height:40px;
+    font-size:20px;
 
 }
         :root {

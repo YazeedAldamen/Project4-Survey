@@ -32,20 +32,7 @@
         align-items:center;
         
     }
-    
-
-      
-        nav {
-    width: 100%;
-    padding-inline: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    
-}
-        
+       
     </style>
 </head>
 <body>
@@ -105,7 +92,7 @@
         </div><br>
             <%h.Text = "";
                     }
-                %>
+               %>
         <br />
         <div class="details">
         </div>
