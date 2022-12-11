@@ -157,7 +157,7 @@
             <footer id="footer1">
 
         <div class="social">
-            <p id="rights">© 2022 Social Hawk. All Rights Reserved</p>
+            <p id="rights">© 2022 Survey Perfecto. All Rights Reserved</p>
             <div class="inst" style="display:flex; justify-content:center; gap:10px; margin-top:10px;">
                 <a class="icons" href="https://web.facebook.com/musab.alghannam.37/" target="_blank" style="text-decoration:none; color:white;"> <i class="fa-brands fa-facebook-f"></i></a>
                 <a class="icons" href="https://www.linkedin.com/in/musab-ghannam-0a8284253/" target="_blank" style="text-decoration:none; color:white;"> <i class="fa-brands fa-linkedin-in"></i></a>

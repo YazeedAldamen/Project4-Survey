@@ -28,7 +28,7 @@ namespace Project_4
 
 
 
-            string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\questionfile.txt";
+            string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\Texts\\questionfile.txt";
              questions = File.ReadAllLines(path);
 
 
@@ -115,7 +115,7 @@ namespace Project_4
         private  void saveEmpAns(string[] answers) {
 
 
-            string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\" + emp.Name+ ".txt";
+            string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\Texts\\" + emp.Name+ ".txt";
 
 
 
@@ -134,7 +134,7 @@ namespace Project_4
         }
 
         private void surveyTakers() {
-            string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\surveyTakers.txt";
+            string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\Texts\\surveyTakers.txt";
             string info = $"{emp.Id},{emp.Name},{emp.Email},{DateTime.Now}\n";
 
             File.AppendAllText(path,info);
@@ -155,7 +155,7 @@ namespace Project_4
 
 
             //write the employees again to file 
-            string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\TextFile1.txt";
+            string path = "C:\\Users\\Dell\\Project4-Survey\\Project4\\Texts\\TextFile1.txt";
             string all = null;
             foreach (Employee emp in emps)
             {

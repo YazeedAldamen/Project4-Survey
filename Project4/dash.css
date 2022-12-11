@@ -53,7 +53,7 @@ img {
     display: flex;
     justify-content: space-around;
     transition: 0.8s;
-    
+    align-items:center;
     
 }
 
@@ -73,5 +73,29 @@ img {
 
 .all {
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+
+#Button1 {
+    border: 2px solid var(--mainColor);
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: var(--mainColor);
+    transition: 0.4s;
+    margin-right: 15px;
+    background-color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    #Button1:hover {
+        color: white;
+        background-color: var(--mainColor);
+    }
+
+#create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

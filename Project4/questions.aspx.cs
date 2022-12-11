@@ -24,7 +24,7 @@ namespace Project_4
         }
         public void writeFileAdmin()
         {
-            string path = "C:\\Users\\dell\\Project4-Survey\\Project4\\questionfile.txt";
+            string path = "C:\\Users\\dell\\Project4-Survey\\Project4\\Texts\\questionfile.txt";
             
             string[] questions = new string[10];
             questions[0] = TextBox1.Text;

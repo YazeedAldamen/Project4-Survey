@@ -29,7 +29,7 @@
                                 <h1 style="margin-bottom:12px; font-family:'Comic Sans MS'; color : #B62828 ;">Log In</h1>
                             
                             </div>
-                            <div class="form-floating from-floating-sm">
+                            <div class="form-floating form-floating-sm">
                                 <input type="email" name="email" placeholder="Email" id="email" class="form-control " style="width:100%; padding:10px;  height: calc(2.1rem + 30px); " runat="server"/>
                                 <label class="form-label" for="email" >Email</label>
                             </div>

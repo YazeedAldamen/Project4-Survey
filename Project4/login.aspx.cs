@@ -63,7 +63,7 @@ namespace Project_4
 
         public void readFile()
         {
-            string path = "C:\\Users\\dell\\Project4-Survey\\Project4\\TextFile1.txt";
+            string path = "C:\\Users\\dell\\Project4-Survey\\Project4\\Texts\\TextFile1.txt";
             string[] lines = File.ReadAllLines(path);
             for(int i=0; i<lines.Length; i++) 
             {

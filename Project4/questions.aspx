@@ -14,7 +14,7 @@
         
         .btnSubmmit {
             width:150px;
-            height:60px;
+            height:40px;
             margin-top:20px;
             float:left;
             margin-bottom:30px;
@@ -22,8 +22,7 @@
             border:3px solid #bb283a;
             background-color:white;
             color:#bb283a;
-            font-weight:800;
-            font-size:20px;
+            font-size:18px;
             transition:.8s;
             cursor:pointer;
         }
@@ -49,6 +48,12 @@
             color: #FFFFFF;
             font-size: 15px;
         }
+        .log{
+            border: 2px solid var(--mainColor);
+            padding: 8px 20px;
+            border-radius: 5px;
+            color: var(--mainColor);
+            transition: 0.4s;
 
         
 
@@ -59,7 +64,7 @@
         <div class="logo">
             <a href="home.html"><img src="img/logo.png" alt="Alternate Text" style="width:200px" /></a>
         </div>
-        <a href="home.html"><div class="log">Log Out</div></a>
+        <a href="home.html"><div class="log"> Log Out </div></a>
     </nav>
      <br /><br />
     <div class="container">
@@ -79,48 +84,48 @@
                     <label for="question1" class="form-label">Question1</label> <br/>
                 </div>
                 <div class="form-floating">
-                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Question2" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Question2" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(255, 0, 0, 0.6);"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="TextBox2" runat="server" ErrorMessage="*Required"></asp:RequiredFieldValidator>
                     <label for="question1" class="form-label">Question2</label> <br/>
                 </div>
                 <div class="form-floating">
-                    <asp:TextBox ID="TextBox3" runat="server" placeholder="Question3" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" placeholder="Question3" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(255, 0, 0, 0.6);"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="TextBox3" runat="server" ErrorMessage="*Required"></asp:RequiredFieldValidator>
                     <label for="question1" class="form-label">Question3</label> <br/>
                 </div>
                 <div class="form-floating">
-                    <asp:TextBox ID="TextBox4" runat="server" placeholder="Question4" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" placeholder="Question4" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(255, 0, 0, 0.6);"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="TextBox4" runat="server" ErrorMessage="*Required"></asp:RequiredFieldValidator>
                     <label for="question1" class="form-label">Question4</label> <br/>
                 </div>
                 <div class="form-floating">
-                    <asp:TextBox ID="TextBox5" runat="server" placeholder="Question5" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <asp:TextBox ID="TextBox5" runat="server" placeholder="Question5" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(255, 0, 0, 0.6);"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ControlToValidate="TextBox5" runat="server" ErrorMessage="*Required"></asp:RequiredFieldValidator>
                     <label for="question1" class="form-label">Question5</label> <br/>
                 </div>
                 <div class="form-floating">
-                    <asp:TextBox ID="TextBox6" runat="server" placeholder="Question6" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <asp:TextBox ID="TextBox6" runat="server" placeholder="Question6" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(255, 0, 0, 0.6);"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ControlToValidate="TextBox6" runat="server" ErrorMessage="*Required"></asp:RequiredFieldValidator>
                     <label for="question1" class="form-label">Question6</label> <br/>
                 </div>
                 <div class="form-floating">
-                    <asp:TextBox ID="TextBox7" runat="server" placeholder="Question7" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <asp:TextBox ID="TextBox7" runat="server" placeholder="Question7" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(255, 0, 0, 0.6);"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ControlToValidate="TextBox7" runat="server" ErrorMessage="*Required"></asp:RequiredFieldValidator>
                     <label for="question1" class="form-label">Question7</label> <br/>
                 
                 </div>
                 <div class="form-floating">
-                    <asp:TextBox ID="TextBox8" runat="server" placeholder="Question8" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <asp:TextBox ID="TextBox8" runat="server" placeholder="Question8" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(255, 0, 0, 0.6);"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ControlToValidate="TextBox8" runat="server" ErrorMessage="*Required"></asp:RequiredFieldValidator>
                     <label for="question1" class="form-label">Question8</label> <br/>
                 </div>
                 <div class="form-floating">
-                    <asp:TextBox ID="TextBox9" runat="server" placeholder="Question9" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <asp:TextBox ID="TextBox9" runat="server" placeholder="Question9" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(255, 0, 0, 0.6);"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator9" ControlToValidate="TextBox9" runat="server" ErrorMessage="*Required"></asp:RequiredFieldValidator>
                     <label for="question1" class="form-label">Question9</label> <br/>
                 </div>
                 <div class="form-floating">
-                    <asp:TextBox ID="TextBox10" runat="server" placeholder="Question10" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);"></asp:TextBox>
+                    <asp:TextBox ID="TextBox10" runat="server" placeholder="Question10" class="form-control form-control-success" style= "box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(255, 0, 0, 0.6);"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" ControlToValidate="TextBox10" runat="server" ErrorMessage="*Required"></asp:RequiredFieldValidator>
                     <label for="question1" class="form-label">Question10</label> <br/>
                 </div>
@@ -141,7 +146,7 @@
         <footer id="footer1">
 
         <div class="social">
-            <p id="rights">© 2022 Social Hawk. All Rights Reserved</p>
+            <p id="rights">© 2022 Survey Perfecto. All Rights Reserved</p>
             <div class="inst" style="display:flex; justify-content:center; gap:10px; margin-top:10px;">
                 <a class="icons" href="https://web.facebook.com/musab.alghannam.37/" target="_blank" style="text-decoration:none; color:white;"> <i class="fa-brands fa-facebook-f"></i></a>
                 <a class="icons" href="https://www.linkedin.com/in/musab-ghannam-0a8284253/" target="_blank" style="text-decoration:none; color:white;"> <i class="fa-brands fa-linkedin-in"></i></a>

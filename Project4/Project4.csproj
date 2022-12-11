@@ -77,9 +77,9 @@
     <Content Include="questions.aspx" />
     <Content Include="navbar.css" />
     <Content Include="survey.aspx" />
-    <Content Include="surveyTakers.txt" />
-    <Content Include="TextFile1.txt" />
-    <Content Include="questionfile.txt" />
+    <Content Include="Texts\surveyTakers.txt" />
+    <Content Include="Texts\TextFile1.txt" />
+    <Content Include="Texts\questionfile.txt" />
     <Content Include="thank.css" />
     <Content Include="thankyou.html" />
     <Content Include="Web.config" />
@@ -132,7 +132,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="img\" />
     <Folder Include="Models\" />
-    <Folder Include="Texts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
