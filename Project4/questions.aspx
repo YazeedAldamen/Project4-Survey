@@ -48,13 +48,18 @@
             color: #FFFFFF;
             font-size: 15px;
         }
-        .log{
-            border: 2px solid var(--mainColor);
-            padding: 8px 20px;
-            border-radius: 5px;
-            color: var(--mainColor);
-            transition: 0.4s;
+       img{
+           position:fixed;
 
+       }
+
+        @media (max-width: 768px) {
+
+            img {
+                display: none ;
+            }
+        }
+       
         
 
     </style>
@@ -64,7 +69,7 @@
         <div class="logo">
             <a href="home.html"><img src="img/logo.png" alt="Alternate Text" style="width:200px" /></a>
         </div>
-        <a href="home.html"><div class="log"> Log Out </div></a>
+        <a href="home.html"><div class="log" style="padding: 5px 20px; font-family:Arial;"> Log Out </div></a>
     </nav>
      <br /><br />
     <div class="container">
@@ -134,8 +139,8 @@
     </form>
                     </div>
 
-     <div class="col-lg-4 col-12" style="height:100%;">
-                         <img src="img/Forms.gif" alt="Alternate Text" style="position:fixed;"/>
+     <div class="col-lg-4 col-12 image" style="height:100%;">
+                         <img src="img/Forms.gif" alt="Alternate Text"/>
 
       </div>
       
