@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Texts"
   ],
-  "SelectedNode": "\\survey.aspx",
+  "SelectedNode": "\\survey.aspx.cs",
   "PreviewInSolutionExplorer": false
 }

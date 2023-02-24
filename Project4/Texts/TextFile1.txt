@@ -1,10 +1,10 @@
 Ahmad Hamaideh,2222,ahmad@gmail.com,False
 Nouran Omar,1234,nouran@gmail.com,True
-Haya AlKhateeb,5896,haya@gmail.com,False
-Qais Darabseh,2368,qais@gmail.com,False
+Haya AlKhateeb,5896,haya@gmail.com,True
+Qais Darabseh,2368,qais@gmail.com,True
 Yazeed Aldamen,8954,yazeed@gmail.com,True
 Wesam Abushaqra,4968,wesam@gmail.com,False
 Mayyas Obeidat,1256,mayyas@gmail.com,False
-Malek Obeidat,9182,malek@gmail.com,False
+Malek Obeidat,9182,malek@gmail.com,True
 Momen Alakhras,7859,momen@gmail.com,False
 Mohammad Sawalha,4852,mohammad@gmail.com,False
